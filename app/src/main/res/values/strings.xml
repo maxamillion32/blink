@@ -1,0 +1,23 @@
+<resources>
+    <string name="sign">Please Sign In</string>
+    <string name="addEvent">Add an event</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="dont">Dont have an account?</string>
+    <string name="fbconnect">Sign in via Facebook</string>
+    <string name="vkconnect">Sign in via VK</string>
+    <string name="signup">Sign Up</string>
+    <string name="or">Or</string>
+    <string name="Login">Login</string>
+    <string name="cozy">Choose a cozy place for hanging out and share it with your friends.</string>
+    <string name="app_name">Blink</string>
+    <string name="hot">Hot</string>
+    <string name="nearby">Nearby</string>
+    <string name="newEvent">New event</string>
+    <string name="interesting">Interesting</string>
+    <string name="profile">Profile</string>
+    <string name="friends">Friends</string>
+    <string name="facebook_app_id">181668488953026</string>
+    <string name="vk_app_id">5689292</string>
+    <string name="geo_api_key">AIzaSyAlT_jXPT14cYCJrIzxmm_hnoKQijWRPGk</string>
+</resources>

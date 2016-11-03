@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f0f0f0</color>
+    <color name="colorPrimaryDark">#9ea2a2</color>
+    <color name="colorAccent">#9ea2a2</color>
+    <color name="textColor">#9ea2a2</color>
+    <color name="buttonColor">#40a4f2</color>
+    <color name="buttonPressedColor">#265F8C</color>
+    <color name="fbFocusedColor">#3b5998</color>
+    <color name="fbPressedColor">#2D4373</color>
+    <color name="vkFocusedColor">#45668E</color>
+    <color name="vkPressedColor">#324863</color>
+    <color name="eventText">#2d393f</color>
+</resources>

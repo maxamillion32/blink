@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/hot"
+        icon="@drawable/ic_whatshot_black_24dp"
+        title="@string/hot" />
+    <tab
+        id="@+id/nearby"
+        icon="@drawable/ic_search_black_24dp"
+        title="@string/nearby" />
+    <tab
+        id="@+id/newEvent"
+        icon="@drawable/ic_event_black_24dp"
+        title="@string/newEvent" />
+    <tab
+        id="@+id/interesting"
+        icon="@drawable/ic_directions_run_black_24dp"
+        title="@string/interesting" />
+    <tab
+        id="@+id/profile"
+        icon="@drawable/ic_account_circle_black_24dp"
+        title="@string/profile" />
+</tabs>
