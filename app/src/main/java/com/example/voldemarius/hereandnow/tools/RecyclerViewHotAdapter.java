@@ -1,5 +1,6 @@
 package com.example.voldemarius.hereandnow.tools;
 
+import android.graphics.Typeface;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -33,11 +34,18 @@ public class RecyclerViewHotAdapter extends RecyclerView.Adapter<RecyclerViewHot
 
         ViewHolder(View view) {
             super(view);
+            Typeface ptSansBold=Typeface.createFromAsset(view.getContext().getAssets(),"fonts/PT_SansBold.ttf");
+            Typeface ptSansRegular=Typeface.createFromAsset(view.getContext().getAssets(),"fonts/PT_SansRegular.ttf");
+            Typeface latoBold=Typeface.createFromAsset(view.getContext().getAssets(),"fonts/Lato-Bold.ttf");
+            Typeface latoRegular=Typeface.createFromAsset(view.getContext().getAssets(),"fonts/Lato-Regular.ttf");
             eventView=view;
             cardView = (CardView)view.findViewById(R.id.cardView);
             time = (TextView)view.findViewById(R.id.textTime);
+            time.setTypeface(latoBold);
             title = (TextView)view.findViewById(R.id.textTitle);
+            title.setTypeface(ptSansBold);
             location = (TextView)view.findViewById(R.id.textLocation);
+            location.setTypeface(ptSansRegular);
             mainImage = (ImageView)view.findViewById(R.id.imageEvent);
             addBtn = (Button)view.findViewById(R.id.addEventBtn);
             moreBtn = (ImageButton)view.findViewById(R.id.moreEventBtn);

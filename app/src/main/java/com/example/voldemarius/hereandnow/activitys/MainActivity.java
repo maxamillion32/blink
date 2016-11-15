@@ -1,5 +1,8 @@
 package com.example.voldemarius.hereandnow.activitys;
 
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -8,6 +11,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Base64;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -19,6 +24,9 @@ import com.example.voldemarius.hereandnow.fragments.NewEventFragment;
 import com.example.voldemarius.hereandnow.fragments.ProfileFragment;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
         implementViews();
         setSupportActionBar(toolbar);
-
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,FirstWindowFragment.newInstance()).addToBackStack(null).commit();//Добавляем перву вкладку (hot and friends)
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
