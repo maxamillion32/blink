@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/viewpager_map_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/viewpager_map_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/viewpager_map_image"
+        android:layout_toEndOf="@+id/viewpager_map_image"
+        android:text="Rooftop Basketball"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/eventText"/>
+    <TextView
+        android:id="@+id/viewpager_map_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/viewpager_map_image"
+        android:layout_toEndOf="@id/viewpager_map_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/eventText"
+        android:text="2271 Frederick Douglass Boulvard"
+        android:textSize="12sp"
+        android:layout_below="@+id/viewpager_map_title"/>
+    <TextView
+        android:id="@+id/viewpager_map_time"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/viewpager_map_image"
+        android:layout_toEndOf="@id/viewpager_map_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/textColor"
+        android:text="Tomorrow at 10:00"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

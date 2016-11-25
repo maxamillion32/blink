@@ -9,7 +9,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp">
 
         <android.support.design.widget.AppBarLayout
             android:id="@+id/appbar"
@@ -25,7 +26,7 @@
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
     </LinearLayout>
     <com.roughike.bottombar.BottomBar
         android:id="@+id/bottomBar"
@@ -36,7 +37,7 @@
         app:bb_tabXmlResource="@xml/bottom_bar_items"
         app:bb_activeTabColor="@color/buttonColor"
         app:bb_inActiveTabColor="@color/textColor"
-        app:bb_behavior="shifting|shy"
+        app:bb_behavior="shifting"
         app:bb_tabletMode="false"
         />
 

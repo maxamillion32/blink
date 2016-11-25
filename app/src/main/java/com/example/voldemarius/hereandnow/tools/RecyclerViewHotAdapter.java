@@ -28,9 +28,12 @@ public class RecyclerViewHotAdapter extends RecyclerView.Adapter<RecyclerViewHot
         TextView title;
         TextView location;
         ImageView mainImage;
-        Button addBtn;
+        ImageButton viewBtn;
         View eventView;
-        ImageButton moreBtn;
+        ImageButton shareBtn;
+        TextView interestNumber;
+        TextView category;
+        TextView author;
 
         ViewHolder(View view) {
             super(view);
@@ -41,14 +44,20 @@ public class RecyclerViewHotAdapter extends RecyclerView.Adapter<RecyclerViewHot
             eventView=view;
             cardView = (CardView)view.findViewById(R.id.cardView);
             time = (TextView)view.findViewById(R.id.textTime);
-            time.setTypeface(latoBold);
+            time.setTypeface(ptSansBold);
             title = (TextView)view.findViewById(R.id.textTitle);
             title.setTypeface(ptSansBold);
             location = (TextView)view.findViewById(R.id.textLocation);
             location.setTypeface(ptSansRegular);
+            interestNumber = (TextView)view.findViewById(R.id.interestedNumber);
+            interestNumber.setTypeface(ptSansRegular);
             mainImage = (ImageView)view.findViewById(R.id.imageEvent);
-            addBtn = (Button)view.findViewById(R.id.addEventBtn);
-            moreBtn = (ImageButton)view.findViewById(R.id.moreEventBtn);
+            category = (TextView)view.findViewById(R.id.eventCategory);
+            category.setTypeface(latoBold);
+            author = (TextView)view.findViewById(R.id.eventAuthor);
+            author.setTypeface(latoBold);
+            viewBtn = (ImageButton)view.findViewById(R.id.addEventBtn);
+            shareBtn = (ImageButton)view.findViewById(R.id.shareEventBtn);
         }
     }
     @Override

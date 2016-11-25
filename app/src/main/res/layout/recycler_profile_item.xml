@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="12dp"
+    >
+    <ImageView
+        android:id="@+id/recycler_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/image_rounded_coreners"
+        />
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycler_image"
+        android:text="Morning skateboarding"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/eventText"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="12 hours ago"
+        android:layout_below="@+id/item_name"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"/>
 
-</LinearLayout>
+</RelativeLayout>
